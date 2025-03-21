@@ -99,19 +99,23 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-full px-8"
-              >
-                Request Demo
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-white border-white/30 hover:bg-white/10 rounded-full px-8"
-              >
-                Learn More
-              </Button>
+              <Link href="/demo">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-full px-8"
+                >
+                  Request Demo
+                </Button>
+              </Link>
+              <Link href="/demo">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-white border-white/30 hover:bg-white/10 rounded-full px-8"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </motion.div>
             
             <motion.div
